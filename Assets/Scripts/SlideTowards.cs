@@ -10,4 +10,5 @@ public class SlideTowards : MonoBehaviour
     {
         transform.position = AnimMath.Slide(transform.position, target.position, 0.01f); 
     }
+    
 }
