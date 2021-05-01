@@ -19,6 +19,7 @@ public class GUIController : MonoBehaviour
     void Start()
     {
         events = GetComponentInChildren<EventSystem>();
+        //SoundEffectBoard.PlaySong();
     }
 
     // Update is called once per frame
