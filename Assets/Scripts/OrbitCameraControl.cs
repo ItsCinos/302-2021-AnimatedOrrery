@@ -42,7 +42,7 @@ public class OrbitCameraControl : MonoBehaviour
 
         float scroll = Input.GetAxisRaw("Mouse ScrollWheel");
         targetDollyDis += scroll * mouseScrollMultiplier;
-        targetDollyDis = Mathf.Clamp(targetDollyDis, 2.5f, 15);
+        targetDollyDis = Mathf.Clamp(targetDollyDis, 2.5f, 75);
 
         dollyDis = AnimMath.Slide(dollyDis, targetDollyDis, .05f); //ease
 

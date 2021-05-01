@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8f34868b8cadbf548b15f65de58ba176, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -191,7 +191,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -303,7 +303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 402037052}
   - component: {fileID: 402037051}
   - component: {fileID: 402037050}
+  - component: {fileID: 402037055}
   m_Layer: 0
   m_Name: Planet5
   m_TagString: Untagged
@@ -461,6 +462,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402037055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402037049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98da4173f45685f4aae3472b0550c2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 1024
 --- !u!1 &540944821
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,9 +508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bddd3b275d99c64fb194fd6175211f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivityX: 1
-  mouseSensitivityY: 1
-  mouseScrollMultiplier: 5
+  mouseSensitivityX: 4
+  mouseSensitivityY: -4
+  mouseScrollMultiplier: 8
 --- !u!114 &540944823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +518,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540944821}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be62f8fba042f8d4aa4d31be0fc4f5f7, type: 3}
   m_Name: 
@@ -656,7 +671,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -754,7 +769,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -811,6 +826,7 @@ GameObject:
   - component: {fileID: 983296532}
   - component: {fileID: 983296531}
   - component: {fileID: 983296530}
+  - component: {fileID: 983296535}
   m_Layer: 0
   m_Name: Planet3
   m_TagString: Untagged
@@ -912,6 +928,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983296535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983296529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057f8e119a0205947a3665fcb2579e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 512
 --- !u!1 &1008135554
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +955,7 @@ GameObject:
   - component: {fileID: 1008135557}
   - component: {fileID: 1008135556}
   - component: {fileID: 1008135555}
+  - component: {fileID: 1008135560}
   m_Layer: 0
   m_Name: Planet4
   m_TagString: Untagged
@@ -1026,6 +1057,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008135560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008135554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75294cdcdec3f347bbb4240c767cb5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 256
 --- !u!1 &1105192571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1084,7 @@ GameObject:
   - component: {fileID: 1105192574}
   - component: {fileID: 1105192573}
   - component: {fileID: 1105192572}
+  - component: {fileID: 1105192577}
   m_Layer: 0
   m_Name: Planet1
   m_TagString: Untagged
@@ -1139,6 +1185,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105192577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105192571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df67383d48b13c44b511d101739915b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 128
 --- !u!1 &1264374469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1228,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.74
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1226,7 +1286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264374469}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -0.09, y: 8.01, z: 0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1314,7 +1374,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1426,7 +1486,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1468,6 +1528,7 @@ GameObject:
   - component: {fileID: 1912587698}
   - component: {fileID: 1912587697}
   - component: {fileID: 1912587696}
+  - component: {fileID: 1912587699}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -1511,7 +1572,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1912587694}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1521,7 +1582,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8b40c150e97470a42b1785e3077e69cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1551,6 +1612,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912587694}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1912587699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912587694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609f209afc0619d40917c06e6013d64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 1024
+  mesh: {fileID: 0}
 --- !u!1 &2094383490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1709,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1676,6 +1752,7 @@ GameObject:
   - component: {fileID: 2143755208}
   - component: {fileID: 2143755207}
   - component: {fileID: 2143755206}
+  - component: {fileID: 2143755211}
   m_Layer: 0
   m_Name: Planet2
   m_TagString: Untagged
@@ -1776,6 +1853,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143755211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143755205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff79123b445d944b896b31f98e46e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoom: 20
+  size: 2048
 --- !u!1 &2146319323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1935,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ba9822bbfa97174ebbf9b65fbb8a7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
